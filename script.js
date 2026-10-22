@@ -5,7 +5,7 @@ let rounds = 5;
 
 // UI
 const buttons = document.querySelector("#gameButtons");
-let gameResults = document.getElementById("#gameResults");
+let gameResults = document.getElementById("gameResults");
 
 buttons.addEventListener("click", getHumanChoice);
 
@@ -27,7 +27,7 @@ function getComputerChoice() {
 
 // Getting the player's choice
 function getHumanChoice(e) {
-    let humanChoice = e.target;
+    let humanChoice = e.target.id;
     console.log(humanChoice);
 
     switch (humanChoice) {
@@ -51,9 +51,8 @@ function gameResultText(text) {
 }
 
 // Playing the game
-function playGame() {
+function playGame(humanChoice) {
     let computerChoice = getComputerChoice();
-    let humanChoice = getHumanChoice();
     playRound(humanChoice, computerChoice);
     rounds--;
 
