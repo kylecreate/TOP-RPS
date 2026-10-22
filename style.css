@@ -1,3 +1,12 @@
+/* Font Loading */
+@font-face {
+    font-display: swap;
+    font-family: "Jetbrains Mono Regular";
+    font-style: normal;
+    font-weight: normal;
+    src: url(./assets/font/JetBrainsMono-Regular.ttf);
+}
+
 /* Complete CSS Reset */
 * {
     margin: 0;
@@ -30,4 +39,26 @@ button {
 img {
     max-width: 100%;
     display: block;
+}
+
+/* Global Changes w/ root */
+:root {
+    /* Colors */
+    --clr-black: black;
+    --clor-white: white;
+
+    /* Font */
+    --FF: "Jetbrains Mono";
+}
+
+/* Typography */
+body {
+    font-family: var(--FF);
+}
+
+.site-title,
+.site-desc,
+#gameButtons,
+#gameResults {
+    text-align: center;
 }
