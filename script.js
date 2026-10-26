@@ -28,7 +28,6 @@ function getComputerChoice() {
 // Getting the player's choice
 function getHumanChoice(e) {
     let humanChoice = e.target.id;
-    console.log(humanChoice);
 
     switch (humanChoice) {
         case "rock":
