@@ -4,14 +4,34 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <meta name="author" content="kylecreate from TheOdinProject">
     <meta name="description" content="RPS Game using JavaScript from The Odin Project">
+
     <title>TOP - RPS Game</title>
+
+    <link rel="stylesheet" href="./style.css">
+
+    <link rel="preload" href="./assets/font/JetBrainsMono-Regular.ttf" as="font" type="font/ttf" crossorigin />
 </head>
 
 <body>
 
-    <p>Please open the browser's console to view and play the game</p>
+    <!-- Game Info -->
+    <h1 class="site-title">Rock Paper Scissors</h1>
+    <p class="site-desc">Game is played in 5 rounds and ties aren't scored. Press a choice below to begin!</p>
+
+    <!-- Game Buttons -->
+    <div id="gameButtons">
+        <button id="rock">Rock</button>
+
+        <button id="paper">Paper</button>
+
+        <button id="scissors">Scissors</button>
+    </div>
+
+    <!-- Game Results with score -->
+    <div id="gameResults"></div>
 
     <script src="./script.js"></script>
 </body>

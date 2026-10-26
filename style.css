@@ -1,0 +1,137 @@
+/* Font Loading */
+@font-face {
+    font-display: swap;
+    font-family: "Jetbrains Mono Regular";
+    font-style: normal;
+    font-weight: normal;
+    src: url(./assets/font/JetBrainsMono-Regular.ttf);
+}
+
+/* Complete CSS Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    -moz-text-size-adjust: none;
+    -webkit-text-size-adjust: none;
+    text-size-adjust: none;
+}
+
+body,
+h1,
+p {
+    margin-block-end: 0;
+}
+
+body {
+    min-height: 100vh;
+    line-height: 1.5;
+}
+
+h1,
+button {
+    line-height: 1.1;
+}
+
+img {
+    max-width: 100%;
+    display: block;
+}
+
+/* Global Changes w/ root */
+:root {
+    /* Colors */
+    --clor-white: rgb(255, 255, 255);
+    --clr-bg: rgb(9, 35, 40);
+    --clr-resultsBg: rgba(15, 15, 15, 0.5);
+
+    /* Font */
+    --FF: "Jetbrains Mono";
+
+    --FW-600: 600;
+}
+
+/* Typography */
+body {
+    font-family: var(--FF);
+    text-align: center;
+    color: var(--clor-white);
+}
+
+button {
+    font-family: inherit;
+    font-weight: var(--FW-600);
+    cursor: pointer;
+}
+
+/* General Changes */
+body {
+    background-color: var(--clr-bg);
+}
+
+.site-title {
+    margin-top: 25px;
+    margin-bottom: 10px;
+}
+
+.site-desc {
+    margin-bottom: 20px;
+}
+
+#gameButtons {
+    margin-bottom: 20px;
+}
+
+#rock,
+#paper,
+#scissors {
+    padding: 15px;
+    border-radius: 8px;
+    border: none;
+}
+
+#gameResults {
+    background-color: var(--clr-resultsBg);
+    width: 40%;
+    margin: 0 auto;
+    border-radius: 15px;
+    padding: 15px;
+}
+
+#gameResults > p {
+    margin-bottom: 10px;
+}
+
+/* Phone Screen */
+@media (min-width: 375px) {
+    body {
+        width: 350px;
+        margin: 0 auto;
+    }
+
+    .site-title {
+        font-size: 24px;
+    }
+
+    #gameButtons {
+        margin-bottom: 30px;
+    }
+
+    #gameResults {
+        width: 80%;
+    }
+}
+
+/* Tablet Screen */
+@media (min-width: 765px) {
+    body {
+        width: 700px;
+    }
+
+    .site-title {
+        font-size: 32px;
+    }
+}
