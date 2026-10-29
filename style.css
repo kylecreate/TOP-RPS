@@ -81,13 +81,15 @@ body {
     margin-bottom: 20px;
 }
 
-#gameButtons {
+#gameButtons,
+#refresh {
     margin-bottom: 20px;
 }
 
 #rock,
 #paper,
-#scissors {
+#scissors,
+#refresh {
     padding: 15px;
     border-radius: 8px;
     border: none;

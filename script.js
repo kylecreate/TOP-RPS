@@ -5,6 +5,7 @@ let rounds = 5;
 
 // UI
 const buttons = document.querySelector("#gameButtons");
+const refreshGameBtn = document.querySelector("#refresh");
 let gameResults = document.getElementById("gameResults");
 
 buttons.addEventListener("click", getHumanChoice);
@@ -109,3 +110,8 @@ function endGame() {
     }
     gameResultText("Want to play again? Refresh the page for a fresh start");
 }
+
+// Refresh the page
+refreshGameBtn.addEventListener("click", (e) => {
+    location.reload();
+})
